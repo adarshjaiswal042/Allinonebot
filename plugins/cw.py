@@ -50,7 +50,7 @@ from Crypto.Util.Padding import unpad
 from base64 import b64encode, b64decode
 
 ACCOUNT_ID = "6206459123001"
-BCOV_POLICY = "BCpkADawqM1474MvKwYlMRZNBPoqkJY-UWm7zE1U769d5r5kqTjG0v8L-THXuVZtdIQJpfMPB37L_VJQxTKeNeLO2Eac_yMywEgyV9GjFDQ2LTiT4FEiHhKAUvdbx9ku6fGnQKSMB8J5uIDd"
+BCOV_POLICY = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9"
 bc_url = (f"https://edge.api.brightcove.com/playback/v1/accounts/{ACCOUNT_ID}/videos")
 bc_hdr = {"BCOV-POLICY": BCOV_POLICY}
 
@@ -75,10 +75,10 @@ async def account_login(bot: Client, m: Message):
         "Usertype": "",
         "Appver": "1.55",
         "Apptype": "android",
-        "Content-Type": "application/json; charset=UTF-8",
+        "Content-Type": "application/json; charset=utf-8",
         "Content-Length": "313",
         "Accept-Encoding": "gzip, deflate",
-        "user-agent": "okhttp/5.0.0-alpha.2",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 2",
         'Connection': 'Keep-Alive'
        }
     #proxy_host = ['47.254.153.200:80']
